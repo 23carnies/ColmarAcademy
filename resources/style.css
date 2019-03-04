@@ -1,0 +1,57 @@
+/* Header */
+
+header {
+  font-family: sans-serif;
+  height: 64px;
+}
+
+header.span {
+  font-size: 32px;
+}
+
+/*.flexContainer {
+  display: flex;
+}*/
+
+.logo {
+  margin-left: 24px;
+}
+
+#colmar {
+  font-weight: 800;
+}
+
+.border {
+  border-right: 16px solid MediumAquamarine;
+}
+
+.borderSpecial {
+  margin-right: 24px;
+}
+
+/* Mobile Header */
+.mobile.header {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .mobile.header {
+    display: inline-block;
+    height: 64px;
+  }
+
+  .desktop.header {
+    display: none;
+  }
+}
+
+
+/* Start Here Section */
+
+/* Banner & Events */
+
+/* Courses Section */
+
+/* Thesis */
+
+/* Footer */
