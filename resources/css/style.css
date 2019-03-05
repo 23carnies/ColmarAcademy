@@ -1,0 +1,125 @@
+/* Universal */
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700|Montserrat:400,400i,500,600,700,800,900');
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+p {
+  font-family: "Domine", Garamond, serif;
+  font-size: 24px;
+}
+/* Header */
+
+header {
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+header.span {
+  font-size: 32px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+  height: 64px;
+  background-color: white;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  float: left;
+  flex-grow: 1;
+}
+
+#colmar {
+  font-weight: 800;
+}
+
+#academy {
+  color: grey;
+  padding: 10px 0;
+}
+
+.desktop.header li {
+  display: inline-block;
+  padding: 24px 10px;
+}
+
+.border {
+  border-right: 16px solid MediumAquamarine;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: grey;
+}
+
+.mobile.header {
+  display: none;
+}
+
+
+/* Mobile Header */
+
+@media only screen and (max-width: 480px) {
+  .mobile.header {
+    display: inline-block;
+    height: 64px;
+  }
+
+  .desktop.header, #colmar, #academy, .logo {
+    display: none;
+  }
+
+  li {
+    padding: 10%;
+  }
+}
+
+
+/* Banner */
+#banner {
+  background-color: grey;
+  width: 100%;
+}
+
+.bannerImg {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.box h1, .box p {
+  margin: 5px auto;
+}
+
+.button {
+  border: 1px solid Darkgrey;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  background-color: Darkgrey;
+  border-radius: 1%;
+  text-align: center;
+}
+
+/* Info & Events */
+
+/* Courses Section */
+
+/* Thesis */
+
+/* Footer */

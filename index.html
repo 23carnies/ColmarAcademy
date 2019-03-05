@@ -9,33 +9,42 @@
   <body>
     <!-- Header -->
     <header>
-      <section class="flexContainer">
-        <div class="desktop header">
-          <img src=".resources/images/ic-logo.svg" class="logo" alt="Lion Logo"><span id="colmar">COLMAR</span><span id="academy">ACADEMY</span>
-          <nav>
+      <section class="container">
+        <div class="logo">
+          <img src="./resources/images/ic-logo.svg" alt="Lion Logo">
+          <span id="colmar">COLMAR</span><span id="academy">ACADEMY</span>
+        </div>
+
+          <nav class="desktop header">
             <ul>
               <li class="border"><a href="#">On Campus</a></li>
               <li class="border"><a href="#">Online</a></li>
               <li class="border"><a href="#">For Companies</a></li>
-              <li class="borderSpecial"><a href="#">Sign In</a></li>
+              <li><a href="#">Sign In</a></li>
             </ul>
           </nav>
-        </div>
-        <div class="mobile header">
-          <nav>
+
+          <!-- Mobile Header -->
+          <nav class="mobile header">
             <ul>
-              <li><a href="#"><img src=".resources/images/ic-logo.svg" class="logo" alt="Lion Logo"></a></li>
-              <li><a href="#"><img src=".resources/images/ic-on-campus.svg" class="logo" alt="Desk Logo"></a></li>
-              <li><a href="#"><img src=".resources/images/ic-online.svg" class="logo" alt="Computer Logo"></a></li>
-              <li><a href="#"><img src=".resources/images/ic-login.svg" class="logo" alt="Person Logo"></a></li>
+              <li><a href="#"><img src="./resources/images/ic-logo.svg" class="logo" alt="Lion Logo"></a></li>
+              <li><a href="#"><img src="./resources/images/ic-on-campus.svg" class="logo" alt="Desk Logo"></a></li>
+              <li><a href="#"><img src="./resources/images/ic-online.svg" class="logo" alt="Computer Logo"></a></li>
+              <li><a href="#"><img src="./resources/images/ic-login.svg" class="logo" alt="Person Logo"></a></li>
             </ul>
           </nav>
-        </div>
       </section>
     </header>
-    <!-- Start Here Section -->
-
-    <!-- Banner & Events -->
+    <!-- Banner -->
+    <section class="container" id="banner">
+      <img src="./resources/images/banner.jpg" class="bannerImg" alt="Students reading">
+      <div class="box">
+        <h1>Learn something new everyday</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="button">Start Here</p>
+      </div>
+    </section>
+    <!-- Info & Events -->
 
     <!-- Courses Section -->
 
