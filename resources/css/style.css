@@ -141,17 +141,17 @@ a, a:visited, a:active {
 
 }
 
-.info {
+.leftBox {
   width: 60%;
   padding: 32px 24px;
 }
 
-.info img {
+.leftBox img {
   width: 90%;
   padding-bottom: 32px;
 }
 
-.info h2 {
+.leftBox h2 {
   padding-bottom: 24px;
 }
 
@@ -159,38 +159,38 @@ a, a:visited, a:active {
   font-size: 0.6rem;
 }
 
-.events {
+.sideBox {
   display: flex;
   flex-direction: column;
   width: 40%;
 }
 
-.event img {
+.article img {
   height: auto;
   width: 35%;
   padding: 16px;
 }
 
-.event {
+.article {
   display: flex;
   align-items: center;
 }
 
-.eventText {
+.articleText {
   display: flex;
   flex-direction: column;
   width: 65%;
 }
 
-.eventText p, .info p {
+.articleText p, .info p {
   font-size: .75rem;
 }
 
-.eventText h3, .eventText p {
+.articleText h3, .eventText p {
   padding-bottom: 8px;
 }
 
-.eventText a {
+.articleText a {
   color: blue;
 }
 /* Courses Section */
@@ -199,7 +199,7 @@ a, a:visited, a:active {
   background-color: lightgrey;
 }
 
-.courses h2 {
+article h2 {
   text-align: center;
   padding-bottom: 32px;
 }
@@ -236,10 +236,7 @@ a, a:visited, a:active {
 }
 /* Thesis */
 .thesis {
-
+  padding: 72px 32px;
 }
 
-#video {
-  width: 60%;
-}
 /* Footer */
