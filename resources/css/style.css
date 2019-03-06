@@ -1,6 +1,9 @@
 /* Universal */
 @import url('https://fonts.googleapis.com/css?family=Domine:400,700|Montserrat:400,400i,500,600,700,800,900');
 
+head {
+  font-size: 18px;
+}
 .container {
   width: 960px;
   margin: 0 auto;
@@ -10,13 +13,26 @@
 
 h1 {
   font-family: "Montserrat", Helvetica, sans-serif;
-  font-size: 40px;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 450;
 }
 
 p {
   font-family: "Domine", Garamond, serif;
-  font-size: 24px;
+  font-size: 1rem;
+  color: grey;
 }
 /* Header */
 
@@ -106,20 +122,124 @@ a, a:visited, a:active {
   margin: 5px auto;
 }
 
+.bannerText {
+  color: black;
+}
+
 .button {
   border: 1px solid Darkgrey;
   padding-top: 8px;
   padding-bottom: 8px;
   width: 100%;
   background-color: Darkgrey;
-  border-radius: 1%;
+  border-radius: 10%;
   text-align: center;
 }
 
 /* Info & Events */
+#infoEvents {
 
+}
+
+.info {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.info img {
+  width: 90%;
+  padding-bottom: 32px;
+}
+
+.info h2 {
+  padding-bottom: 24px;
+}
+
+.sub {
+  font-size: 0.6rem;
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.event img {
+  height: auto;
+  width: 35%;
+  padding: 16px;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+}
+
+.eventText {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.eventText p, .info p {
+  font-size: .75rem;
+}
+
+.eventText h3, .eventText p {
+  padding-bottom: 8px;
+}
+
+.eventText a {
+  color: blue;
+}
 /* Courses Section */
+.courses {
+  padding: 72px 32px;
+  background-color: lightgrey;
+}
 
+.courses h2 {
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+#courseBox {
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course {
+  width: 30%;
+  margin-bottom: 32px;
+}
+
+.courseText {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: white;
+}
+
+.courseText h3, .courseText p {
+  padding-left: 16px;
+}
+
+.line {
+  padding: 8px 0;
+}
+
+.course img {
+  height: auto;
+  width: 100%;
+}
 /* Thesis */
+.thesis {
 
+}
+
+#video {
+  width: 60%;
+}
 /* Footer */
