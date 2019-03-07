@@ -79,7 +79,7 @@ header .container {
   border-right: 16px solid MediumAquamarine;
 }
 
-a, a:visited, a:active {
+header a, header a:visited, header a:active {
   text-decoration: none;
   color: grey;
 }
@@ -130,28 +130,35 @@ a, a:visited, a:active {
   border: 1px solid Darkgrey;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 100%;
+  width: 50%;
   background-color: Darkgrey;
   border-radius: 10%;
   text-align: center;
 }
 
-/* Info & Events */
-#infoEvents {
+@media only screen and (max-width: 480px) {
+  .bannerImg {
+    width: 100%;
+  }
 
+  /*#banner .container {
+    flex-direction: column;
+  }*/
 }
 
-.leftBox {
+/* Info & Events */
+
+.InfoleftBox {
   width: 60%;
   padding: 32px 24px;
 }
 
-.leftBox img {
+.InfoleftBox img {
   width: 90%;
   padding-bottom: 32px;
 }
 
-.leftBox h2 {
+.InfoleftBox h2 {
   padding-bottom: 24px;
 }
 
@@ -159,7 +166,7 @@ a, a:visited, a:active {
   font-size: 0.6rem;
 }
 
-.sideBox {
+.EventsideBox {
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -193,6 +200,37 @@ a, a:visited, a:active {
 .articleText a {
   color: blue;
 }
+
+.mobileImg {
+  display: none;
+}
+
+/* Mobile Info & Events */
+
+@media only screen and (max-width: 480px) {
+  .InfoleftBox {
+    display: none;
+  }
+
+  .article {
+    flex-direction: column;
+  }
+
+  .articleText {
+    width: 100%;
+  }
+
+  .deskImg {
+    display: none;
+  }
+
+  .mobileImg {
+    display: block;
+    width: 100%;
+  }
+}
+
+
 /* Courses Section */
 .courses {
   padding: 72px 32px;
@@ -234,9 +272,76 @@ article h2 {
   height: auto;
   width: 100%;
 }
+
+.mobileCourses {
+  display: none;
+}
+
+/* Mobile Courses */
+@media only screen and (max-width: 480px) {
+  .courses h2, #courseBox {
+    display: none;
+  }
+
+  .mobileCourses {
+    display: block;
+  }
+
+  .mobileCourses h3 {
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    border: 1px solid white;
+    margin-bottom: 8px;
+    background-color: grey;
+  }
+
+  .mobileCourses a, .mobileCourses a:visited, .mobileCourses a:hover {
+    text-decoration: none;
+    color: black;
+  }
+}
+
 /* Thesis */
 .thesis {
   padding: 72px 32px;
 }
 
+.ThesissideBox {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.ThesisleftBox {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.ThesisleftBox img {
+  width: 90%;
+  padding-bottom: 32px;
+}
+
+.ThesisleftBox h2 {
+  padding-bottom: 24px;
+}
+
 /* Footer */
+
+footer {
+  display: flex;
+  background-color: white;
+  padding-top: 16px;
+  height: 80px;
+}
+
+footer p {
+  flex-grow: 1;
+  padding-left: 24px;
+}
+
+footer li {
+  padding-right: 16px;
+  display: inline-block;
+}

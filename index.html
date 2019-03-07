@@ -35,6 +35,7 @@
           </nav>
       </section>
     </header>
+
     <!-- Banner -->
     <section class="container" id="banner">
       <img src="./resources/images/banner.jpg" class="bannerImg" alt="Students reading">
@@ -46,8 +47,8 @@
     </section>
 
     <!-- Info & Events -->
-    <article class="container" id="infoEvents">
-      <section class="leftBox">
+    <article class="container">
+      <section class="InfoleftBox">
         <img src="./resources/images/information-main.jpg" class="infoImg" alt="Man reading book">
         <h2>It doesn't hurt to keep practicing</h2>
         <p>"Curabitur vitae libero in ipsom porttitor consequat. Aliquam et commodo lectus, nec consequat neque.
@@ -55,19 +56,20 @@
         <br/><p class="sub">Emmanuel, Sr Strategist at Hiring.com</p>
       </section>
 
-      <section class="sideBox">
+      <section class="EventsideBox">
         <div class="article">
-          <img src="./resources/images/information-orientation.jpg" alt="Kids walking">
+          <img src="./resources/images/information-orientation.jpg" class="deskImg" alt="Kids walking">
+          <img src="./resources/images/information-orientation-mobile.jpg" class="mobileImg" alt="Kids Walking">
           <div class="articleText">
             <h3>Orientation date</h3>
             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
             <a href="#">Read more</a>
           </div>
-
         </div>
 
         <div class="article">
-          <img src="./resources/images/information-campus.jpg" alt="Study room with map">
+          <img src="./resources/images/information-campus.jpg" class="deskImg" alt="Study room with map">
+          <img src="./resources/images/information-campus-mobile.jpg" class="mobileImg" alt="Study room with map">
           <div class="articleText">
             <h3>Our Campus</h3>
             <p>Find which campus is close by you</p>
@@ -76,7 +78,8 @@
         </div>
 
         <div class="article">
-          <img src="./resources/images/information-guest-lecture.jpg" alt="Man with glasses and beard">
+          <img src="./resources/images/information-guest-lecture.jpg" class="deskImg" alt="Man with glasses and beard">
+          <img src="./resources/images/information-guest-lecture-mobile.jpg" class="mobileImg" alt="Man with glasses and beard">
           <div class="articleText">
             <h3>Our guest lecture</h3>
             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
@@ -144,6 +147,15 @@
           </div>
         </div>
       </section>
+
+      <section class="mobileCourses">
+        <h3><a href="#">Software engineering</a></h3>
+        <h3><a href="#">Computer art</a></h3>
+        <h3><a href="#">Design</a></h3>
+        <h3><a href="#">Data</a></h3>
+        <h3><a href="#">Business</a></h3>
+        <h3><a href="#">Marketing</a></h3>
+      </section>
     </article>
 
     <!-- Thesis -->
@@ -151,7 +163,7 @@
       <h2>Thesis exhibit</h2>
       <section class="container">
         <!-- Video Box -->
-        <div class="leftBox">
+        <div class="ThesisleftBox">
           <video width="320px" height="240px" controls="controls">
             <source src="./resources/videos/thesis.mp4" type="video/mp4" autoplay="false">
             Your browser does not support the video tag.
@@ -162,7 +174,7 @@
         </div>
 
         <!-- News Box -->
-        <section class="sideBox">
+        <section class="ThesissideBox">
           <div class="article">
             <img src="./resources/images/thesis-fisma.jpg" alt="Phone and papers on desk">
             <div class="articleText">
@@ -179,10 +191,15 @@
             </div>
           </div>
         </section>
-
       </section>
-
     </article>
     <!-- Footer -->
+    <footer>
+      <p class="sub">&copy Colmar Academy 2016. All rights reserved</p>
+      <ul>
+        <li><a href="#" class="sub">Terms</a></li>
+        <li><a href="#" class="sub">Privacy</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
