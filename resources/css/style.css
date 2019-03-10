@@ -1,9 +1,10 @@
 /* Universal */
-@import url('https://fonts.googleapis.com/css?family=Domine:400,700|Montserrat:400,400i,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300|Roboto:700');
 
 head {
-  font-size: 18px;
+  font-size: 14px;
 }
+
 .container {
   width: 960px;
   margin: 0 auto;
@@ -12,28 +13,60 @@ head {
 }
 
 h1 {
-  font-family: "Montserrat", Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 900;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 3px #000000;
 }
 
 h2 {
-  font-family: "Montserrat", Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 800;
+  text-shadow: 2px 2px 3px #E2DEDE;
 }
 
 h3 {
-  font-family: "Montserrat", Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
-  font-weight: 450;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px #FFFFFF;
+
 }
 
-p {
-  font-family: "Domine", Garamond, serif;
+p, a {
+  font-family: "Roboto Slab", serif;
   font-size: 1rem;
+  font-weight: 300;
   color: grey;
 }
+
+header a, header a:visited, header a:active, header a:hover,
+footer a, footer a:visited, footer a:active, footer a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+/* Mobile Universal */
+@media screen only and (max-width: 480px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p, a {
+    font-size: 0.8rem;
+  }
+}
+
 /* Header */
 
 header {
@@ -41,7 +74,7 @@ header {
 }
 
 header.span {
-  font-size: 32px;
+  font-size: 2.2rem;
 }
 
 header .container {
@@ -53,12 +86,16 @@ header .container {
   position: relative;
 }
 
-.logo {
+.desktopLogo {
   display: flex;
   align-items: center;
   height: 32px;
   float: left;
   flex-grow: 1;
+}
+
+.span {
+  text-transform: uppercase;
 }
 
 #colmar {
@@ -70,7 +107,7 @@ header .container {
   padding: 10px 0;
 }
 
-.desktop.header li {
+.desktopHeader li {
   display: inline-block;
   padding: 24px 10px;
 }
@@ -79,12 +116,7 @@ header .container {
   border-right: 16px solid MediumAquamarine;
 }
 
-header a, header a:visited, header a:active {
-  text-decoration: none;
-  color: grey;
-}
-
-.mobile.header {
+.mobileHeader {
   display: none;
 }
 
@@ -92,18 +124,29 @@ header a, header a:visited, header a:active {
 /* Mobile Header */
 
 @media only screen and (max-width: 480px) {
-  .mobile.header {
-    display: inline-block;
-    height: 64px;
+  header .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .desktop.header, #colmar, #academy, .logo {
+  .mobileHeader {
+    display: inline;
+  }
+
+  .mobileHeader ul {
+  }
+
+  .mobileHeader li {
+    display: inline;
+    padding: 0 20px;
+  }
+
+  .desktopHeader, #colmar, #academy, .desktopLogo {
     display: none;
   }
 
-  li {
-    padding: 10%;
-  }
 }
 
 
@@ -113,13 +156,18 @@ header a, header a:visited, header a:active {
   width: 100%;
 }
 
-.bannerImg {
+#bannerImgBox {
   width: 60%;
+}
+
+.bannerImg {
+  width: 90%;
+  height: auto;
   padding: 32px 24px;
 }
 
 .box h1, .box p {
-  margin: 5px auto;
+  margin: 2rem auto;
 }
 
 .bannerText {
@@ -128,22 +176,41 @@ header a, header a:visited, header a:active {
 
 .button {
   border: 1px solid Darkgrey;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  width: 50%;
+  padding: 8px 100px;
   background-color: Darkgrey;
-  border-radius: 10%;
+  border-radius: 5%;
+  float: left;
   text-align: center;
+  text-decoration: none;
+
 }
 
+/* Mobile Banner */
 @media only screen and (max-width: 480px) {
-  .bannerImg {
+  #banner {
+    flex-direction: column;
+  }
+
+  .box h1 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .button {
+    margin: 24px auto 32px;
+    background-color: lightgrey;
+    width: 90%;
+    margin: 0 16px;
+  }
+
+  #bannerImgBox {
     width: 100%;
   }
 
-  /*#banner .container {
-    flex-direction: column;
-  }*/
+  .bannerImg {
+    padding: 0;
+    width: 100%;
+  }
 }
 
 /* Info & Events */
@@ -178,9 +245,13 @@ header a, header a:visited, header a:active {
   padding: 16px;
 }
 
-.article {
+.article {    /* on hover make background color change */
   display: flex;
   align-items: center;
+}
+
+.article:hover {
+  background-color: #E2DEDE;
 }
 
 .articleText {
@@ -197,8 +268,21 @@ header a, header a:visited, header a:active {
   padding-bottom: 8px;
 }
 
-.articleText a {
+.articleText p {
+  padding-bottom: 8px;
+}
+
+.articleText a, .articleText a:visited, .articleText a:active {
+  text-decoration: none;
   color: blue;
+  font-size: .75rem;
+}
+
+.articleText a:hover {
+  font-size: .9rem;
+  transition: all 500ms;
+  text-shadow: 2px 2px 4px #fff;
+  font-weight: bold;
 }
 
 .mobileImg {
@@ -208,16 +292,30 @@ header a, header a:visited, header a:active {
 /* Mobile Info & Events */
 
 @media only screen and (max-width: 480px) {
+  #InfoEvents {
+    width: 100%;
+  }
+
   .InfoleftBox {
     display: none;
   }
 
+  .EventsideBox {
+    width: 100%;
+  }
+
   .article {
     flex-direction: column;
+    /*align-items: center;*/
+  }
+
+  .article img {
+    width: 90%;   /*100%?*/
   }
 
   .articleText {
     width: 100%;
+    margin: 0 0 64px 16px;  /* not right */
   }
 
   .deskImg {
@@ -226,7 +324,8 @@ header a, header a:visited, header a:active {
 
   .mobileImg {
     display: block;
-    width: 100%;
+    padding: 16px;
+    margin: 0 auto;
   }
 }
 
@@ -260,12 +359,17 @@ article h2 {
   background-color: white;
 }
 
-.courseText h3, .courseText p {
-  padding-left: 16px;
+.courseText h3 {
+  padding: 16px 0 8px 16px;
+}
+
+.courseText p {
+  padding: 8px 0 24px 16px;
 }
 
 .line {
-  padding: 8px 0;
+  padding-left: 16px;
+  font-size: .8rem;
 }
 
 .course img {
@@ -303,34 +407,61 @@ article h2 {
 }
 
 /* Thesis */
+#ThesisContainer {
+  align-items: flex-start;
+}
 .thesis {
-  padding: 72px 32px;
+  padding-top: 32px;
+  margin: 0 auto;
 }
 
-.ThesissideBox {
+.thesisleftBox {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.thesissideBox {
   display: flex;
   flex-direction: column;
   width: 40%;
 }
 
-.ThesisleftBox {
-  width: 60%;
-  padding: 32px 24px;
+video {
+  width: 100% !important;
+  height: auto !important;
 }
 
-.ThesisleftBox img {
+/*.ThesisleftBox img {
   width: 90%;
   padding-bottom: 32px;
+}                            there is no img so why is this here?    */
+
+.thesisleftBox h3 {
+  padding: 24px 0 8px 0;
 }
 
-.ThesisleftBox h2 {
-  padding-bottom: 24px;
+/* Mobile Thesis */
+@media only screen and (max-width: 480px) {
+  .thesissideBox, .thesisleftBox h3, .thesisleftBox p {
+    display: none;
+  }
+
+  #ThesisContainer {
+    width: 100%;
+  }
+
+  video {
+    padding: 0 0 24px 0;
+  }
+
 }
 
 /* Footer */
 
 footer {
+  width: 960px;
   display: flex;
+  justify-content: center;    /* why off to the left?  */
   background-color: white;
   padding-top: 16px;
   height: 80px;
@@ -344,4 +475,16 @@ footer p {
 footer li {
   padding-right: 16px;
   display: inline-block;
+}
+
+/* Mobile Footer */
+@media only screen and (max-width: 480px) {
+  footer ul {
+    display: none;
+  }
+
+  footer p {
+    width: 100%;
+    padding: 16px 0 16px 16px;
+  }
 }

@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Colmar Academy</title>
     <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
     <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
@@ -10,12 +11,12 @@
     <!-- Header -->
     <header>
       <section class="container">
-        <div class="logo">
+        <div class="desktopLogo">
           <img src="./resources/images/ic-logo.svg" alt="Lion Logo">
-          <span id="colmar">COLMAR</span><span id="academy">ACADEMY</span>
+          <span id="colmar">Colmar</span><span id="academy">Academy</span>
         </div>
 
-          <nav class="desktop header">
+          <nav class="desktopHeader">
             <ul>
               <li class="border"><a href="#">On Campus</a></li>
               <li class="border"><a href="#">Online</a></li>
@@ -23,9 +24,8 @@
               <li><a href="#">Sign In</a></li>
             </ul>
           </nav>
-
           <!-- Mobile Header -->
-          <nav class="mobile header">
+          <nav class="mobileHeader">
             <ul>
               <li><a href="#"><img src="./resources/images/ic-logo.svg" class="logo" alt="Lion Logo"></a></li>
               <li><a href="#"><img src="./resources/images/ic-on-campus.svg" class="logo" alt="Desk Logo"></a></li>
@@ -44,12 +44,12 @@
       <div class="box">
         <h1>Learn something<br/>new everyday</h1>
         <p class="bannerText">Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit.</p>
-        <p class="button">Start Here</p>
+        <a href="#" class="button">Start Here</a>
       </div>
     </section>
 
     <!-- Info & Events -->
-    <article class="container">
+    <article class="container" id="InfoEvents">
       <section class="InfoleftBox">
         <img src="./resources/images/information-main.jpg" class="infoImg" alt="Man reading book">
         <h2>It doesn't hurt to keep practicing</h2>
@@ -163,11 +163,12 @@
     <!-- Thesis -->
     <article class="thesis">
       <h2>Thesis exhibit</h2>
-      <section class="container">
+      <section class="container" id="ThesisContainer">
+
         <!-- Video Box -->
         <div class="thesisleftBox">
           <video controls="controls">
-            <source src="./resources/videos/thesis.mp4" type="video/mp4" autoplay="false">
+            <source src="./resources/videos/thesis.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
           <h3>Reimagine urban</h3>
@@ -195,9 +196,10 @@
         </section>
       </section>
     </article>
+
     <!-- Footer -->
     <footer>
-      <p class="sub">&copy Colmar Academy 2016. All rights reserved</p>
+      <p class="sub">&copy; Colmar Academy 2016. All rights reserved</p>
       <ul>
         <li><a href="#" class="sub">Terms</a></li>
         <li><a href="#" class="sub">Privacy</a></li>
