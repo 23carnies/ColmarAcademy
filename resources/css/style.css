@@ -10,48 +10,47 @@ head {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 900;
   color: #FFFFFF;
-  text-shadow: 1px 1px 3px #000000;
+  text-shadow: 1px 1px 3px #28527A;
 }
 
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
-  text-shadow: 2px 2px 3px #E2DEDE;
+  text-shadow: 1px 1px 2px #28527A;
 }
 
 h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   font-weight: 600;
-  text-shadow: 2px 2px 2px #FFFFFF;
-
 }
 
 p, a {
   font-family: "Roboto Slab", serif;
   font-size: 1rem;
   font-weight: 300;
-  color: grey;
+  color: #464866;
 }
 
 header a, header a:visited, header a:active, header a:hover,
 footer a, footer a:visited, footer a:active, footer a:hover {
   text-decoration: none;
-  color: grey;
+  color: #AAABB8;
 }
 
 /* Mobile Universal */
 @media screen only and (max-width: 480px) {
   h1 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 
   h2 {
@@ -70,21 +69,13 @@ footer a, footer a:visited, footer a:active, footer a:hover {
 /* Header */
 
 header {
-  font-family: "Montserrat", Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header.span {
   font-size: 2.2rem;
 }
 
-header .container {
-  display: flex;
-  align-items: center;
-  margin: 0 24px;
-  height: 64px;
-  background-color: white;
-  position: relative;
-}
 
 .desktopLogo {
   display: flex;
@@ -103,7 +94,7 @@ header .container {
 }
 
 #academy {
-  color: grey;
+  color: #AAABB8;
   padding: 10px 0;
 }
 
@@ -113,7 +104,7 @@ header .container {
 }
 
 .border {
-  border-right: 16px solid MediumAquamarine;
+  border-right: 16px solid #3FEEE6;
 }
 
 .mobileHeader {
@@ -135,9 +126,6 @@ header .container {
     display: inline;
   }
 
-  .mobileHeader ul {
-  }
-
   .mobileHeader li {
     display: inline;
     padding: 0 20px;
@@ -152,8 +140,7 @@ header .container {
 
 /* Banner */
 #banner {
-  background-color: grey;
-  width: 100%;
+  background-color: #58A3BC;
 }
 
 #bannerImgBox {
@@ -171,36 +158,44 @@ header .container {
 }
 
 .bannerText {
-  color: black;
+  color: #28527A;
 }
 
 .button {
-  border: 1px solid Darkgrey;
-  padding: 8px 100px;
-  background-color: Darkgrey;
-  border-radius: 5%;
+  border: 1px solid #2E9CCA;
+  padding: 8px 65px;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px #28527A;
+  background-color: #FAE57C;
+  border-radius: 5px;
+  border: 1px double #;
+  box-shadow: -1px 1px 2px #28527A;
   float: left;
   text-align: center;
   text-decoration: none;
+}
 
+.button:hover {
+  transition: all 300ms ease-in 10ms;
+  box-shadow: -2.5px 3px 5px #28527A;
+  background-color: #F4D160;
+  font-size: 1.1rem;
+}
+
+.fas.fa-angle-double-right {
+  padding: 0 8px;
 }
 
 /* Mobile Banner */
 @media only screen and (max-width: 480px) {
   #banner {
     flex-direction: column;
+    width: 100%;
   }
 
   .box h1 {
     margin-top: 32px;
     margin-bottom: 32px;
-  }
-
-  .button {
-    margin: 24px auto 32px;
-    background-color: lightgrey;
-    width: 90%;
-    margin: 0 16px;
   }
 
   #bannerImgBox {
@@ -211,18 +206,22 @@ header .container {
     padding: 0;
     width: 100%;
   }
+
+  .button {
+    margin-bottom: 32px;
+  /*  background-color: #464866;*/
+  }
 }
 
 /* Info & Events */
 
 .InfoleftBox {
   width: 60%;
-  padding: 32px 24px;
 }
 
 .InfoleftBox img {
   width: 90%;
-  padding-bottom: 32px;
+  padding: 32px 24px;
 }
 
 .InfoleftBox h2 {
@@ -231,6 +230,7 @@ header .container {
 
 .sub {
   font-size: 0.6rem;
+  margin-bottom: 32px;
 }
 
 .EventsideBox {
@@ -245,13 +245,14 @@ header .container {
   padding: 16px;
 }
 
-.article {    /* on hover make background color change */
+.article {
   display: flex;
   align-items: center;
 }
 
 .article:hover {
-  background-color: #E2DEDE;
+  transition: background-color 500ms ease-out 5ms;
+  background-color: #8AC4D0;
 }
 
 .articleText {
@@ -274,15 +275,16 @@ header .container {
 
 .articleText a, .articleText a:visited, .articleText a:active {
   text-decoration: none;
-  color: blue;
+  color: #28527A;
   font-size: .75rem;
 }
 
 .articleText a:hover {
   font-size: .9rem;
-  transition: all 500ms;
+  transition: all 500ms ease-out;
   text-shadow: 2px 2px 4px #fff;
   font-weight: bold;
+  line-height: .9rem;
 }
 
 .mobileImg {
@@ -327,13 +329,17 @@ header .container {
     padding: 16px;
     margin: 0 auto;
   }
+
+  .articleText a:hover {
+    font-weight: bold;
+  }
 }
 
 
 /* Courses Section */
 .courses {
   padding: 72px 32px;
-  background-color: lightgrey;
+  background-color: #8AC4D0;
 }
 
 article h2 {
@@ -356,7 +362,7 @@ article h2 {
 .courseText {
   display: flex;
   flex-flow: column wrap;
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 .courseText h3 {
@@ -367,7 +373,12 @@ article h2 {
   padding: 8px 0 24px 16px;
 }
 
+#art p {
+  padding: 8px 0 16px 16px;
+}
+
 .line {
+  text-transform: uppercase;
   padding-left: 16px;
   font-size: .8rem;
 }
@@ -389,6 +400,7 @@ article h2 {
 
   .mobileCourses {
     display: block;
+    background-color: #58A3BC;
   }
 
   .mobileCourses h3 {
@@ -397,13 +409,22 @@ article h2 {
     padding-bottom: 24px;
     border: 1px solid white;
     margin-bottom: 8px;
-    background-color: grey;
+    background-color: #FAE57C;
   }
 
   .mobileCourses a, .mobileCourses a:visited, .mobileCourses a:hover {
     text-decoration: none;
-    color: black;
+    color: #28527A;
   }
+
+   .mobileCourses h3:hover {
+     transition: all 500ms ease-in 10ms;
+     text-shadow: 2px 2px 3px #28527A;
+     background-color: #F4D160;
+     border-radius: 5px;
+     border: 1px double #;
+     box-shadow: -1px 1px 2px #28527A;
+   }
 }
 
 /* Thesis */
@@ -427,14 +448,9 @@ article h2 {
 }
 
 video {
-  width: 100% !important;
-  height: auto !important;
+  width: 100%;
+  height: auto;
 }
-
-/*.ThesisleftBox img {
-  width: 90%;
-  padding-bottom: 32px;
-}                            there is no img so why is this here?    */
 
 .thesisleftBox h3 {
   padding: 24px 0 8px 0;
@@ -450,6 +466,10 @@ video {
     width: 100%;
   }
 
+  .thesisleftBox {
+    width: 100%;
+  }
+
   video {
     padding: 0 0 24px 0;
   }
@@ -461,8 +481,7 @@ video {
 footer {
   width: 960px;
   display: flex;
-  justify-content: center;    /* why off to the left?  */
-  background-color: white;
+  justify-content: center;
   padding-top: 16px;
   height: 80px;
 }

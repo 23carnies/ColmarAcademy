@@ -6,18 +6,19 @@
     <title>Colmar Academy</title>
     <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
     <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
     <!-- Header -->
     <header>
       <section class="container">
         <div class="desktopLogo">
-          <img src="./resources/images/ic-logo.svg" alt="Lion Logo">
+          <img src="./resources/images/ic-logo.svg" alt="Company Logo">
           <span id="colmar">Colmar</span><span id="academy">Academy</span>
         </div>
 
           <nav class="desktopHeader">
-            <ul>
+            <ul role="presentation">
               <li class="border"><a href="#">On Campus</a></li>
               <li class="border"><a href="#">Online</a></li>
               <li class="border"><a href="#">For Companies</a></li>
@@ -26,7 +27,7 @@
           </nav>
           <!-- Mobile Header -->
           <nav class="mobileHeader">
-            <ul>
+            <ul role="presentation">
               <li><a href="#"><img src="./resources/images/ic-logo.svg" class="logo" alt="Lion Logo"></a></li>
               <li><a href="#"><img src="./resources/images/ic-on-campus.svg" class="logo" alt="Desk Logo"></a></li>
               <li><a href="#"><img src="./resources/images/ic-online.svg" class="logo" alt="Computer Logo"></a></li>
@@ -44,7 +45,7 @@
       <div class="box">
         <h1>Learn something<br/>new everyday</h1>
         <p class="bannerText">Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit.</p>
-        <a href="#" class="button">Start Here</a>
+        <a href="#" class="button" role="button"><i class="fas fa-angle-double-right"></i>Start Here</a>
       </div>
     </section>
 
@@ -99,16 +100,16 @@
           <img src="./resources/images/course-software.jpg" alt="Desktop computers">
           <div class="courseText">
             <h3>Software engineering</h3>
-            <p class="line">COURSES</p>
+            <p class="line">Courses</p>
             <p>Web Development, Mobile Development, iOT, APIs</p>
           </div>
         </div>
 
         <div class="course">
           <img src="./resources/images/course-computer-art.jpg" alt="Hand holding mobile phone">
-          <div class="courseText">
+          <div class="courseText" id="art">
             <h3>Computer art</h3>
-            <p class="line">COURSES</p>
+            <p class="line">Courses</p>
             <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
           </div>
         </div>
@@ -117,7 +118,7 @@
           <img src="./resources/images/course-design.jpg" alt="Person holding camera">
           <div class="courseText">
             <h3>Design</h3>
-            <p class="line">COURSES</p>
+            <p class="line">Courses</p>
             <p>User Experience Design, User Research, Visual Design</p>
           </div>
         </div>
@@ -126,7 +127,7 @@
           <img src="./resources/images/course-data.jpg" alt="Laptop showing graphs">
           <div class="courseText">
             <h3>Data</h3>
-            <p class="line">COURSES</p>
+            <p class="line">Courses</p>
             <p>Data Science, Big Data, SQL, Data Visualization</p>
           </div>
         </div>
@@ -135,7 +136,7 @@
           <img src="./resources/images/course-business.jpg" alt="Chess pieces">
           <div class="courseText">
             <h3>Business</h3>
-            <p class="line">COURSES</p>
+            <p class="line">Courses</p>
             <p>Product Development, Business Development, Startup</p>
           </div>
         </div>
@@ -144,7 +145,7 @@
           <img src="./resources/images/course-marketing.jpg" alt="Arm with smart watch">
           <div class="courseText">
             <h3>Marketing</h3>
-            <p class="line">COURSES</p>
+            <p class="line">Courses</p>
             <p>Analytics, Content Marketing, Mobile Marketing</p>
           </div>
         </div>
@@ -198,7 +199,7 @@
     </article>
 
     <!-- Footer -->
-    <footer>
+    <footer class="container">
       <p class="sub">&copy; Colmar Academy 2016. All rights reserved</p>
       <ul>
         <li><a href="#" class="sub">Terms</a></li>
