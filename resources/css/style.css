@@ -24,7 +24,7 @@ h1 {
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 700;
   text-shadow: .5px .5px 1px #28527A;
 }
 
@@ -38,7 +38,7 @@ p, a {
   font-family: "Roboto Slab", serif;
   font-size: 1rem;
   font-weight: 300;
-  color: #464866;
+  color: #1B252B;
 }
 
 header a, header a:visited, header a:active, header a:hover,
@@ -157,18 +157,13 @@ header.span {
   margin: 2rem auto;
 }
 
-.bannerText {
-  color: #28527A;
-}
-
 .button {
   border: 1px solid #2E9CCA;
   padding: 8px 65px;
-  color: #FFFFFF;
-  text-shadow: 1px 1px 2px #28527A;
-  background-color: #FAE57C;
+  color: #28527A;
+  font-weight: 700;
+  background-color: #FADD7C;
   border-radius: 5px;
-  border: 1px double #;
   box-shadow: -1px 1px 2px #28527A;
   float: left;
   text-align: center;
@@ -178,7 +173,7 @@ header.span {
 .button:hover {
   transition: all 300ms ease-in 10ms;
   box-shadow: -2.5px 3px 5px #28527A;
-  background-color: #F4D160;
+  background-color: #FAD07C;
   font-size: 1.1rem;
 }
 
@@ -228,6 +223,10 @@ header.span {
   padding-bottom: 24px;
 }
 
+.InfoleftBox p {
+  padding: 0 24px;
+}
+
 .sub {
   font-size: 0.6rem;
   margin-bottom: 32px;
@@ -239,50 +238,52 @@ header.span {
   width: 40%;
 }
 
-.article img {
+.event img {
   height: auto;
   width: 35%;
   padding: 16px;
 }
 
-.article {
+.event {
   display: flex;
   align-items: center;
 }
 
-.article:hover {
+.event:hover {
   transition: background-color 500ms ease-out 5ms;
   background-color: #8AC4D0;
 }
 
-.articleText {
+.rightText {
   display: flex;
   flex-direction: column;
   width: 65%;
 }
 
-.articleText p, .info p {
+.rightText p, .info p {
   font-size: .75rem;
 }
 
-.articleText h3, .eventText p {
+.rightText h3, .eventText p {
   padding-bottom: 8px;
 }
 
-.articleText p {
+.rightText p {
   padding-bottom: 8px;
+  color: #777D7B;
 }
 
-.articleText a, .articleText a:visited, .articleText a:active {
+.rightText a, .rightText a:visited, .rightText a:active {
   text-decoration: none;
-  color: #28527A;
+  color: #6560F0;
+  font-weight: bold;
   font-size: .75rem;
 }
 
-.articleText a:hover {
+.rightText a:hover {
   font-size: .9rem;
   transition: all 500ms ease-out;
-  text-shadow: 2px 2px 4px #fff;
+  text-shadow: 1px 1px 2px #fff;
   font-weight: bold;
   line-height: .9rem;
 }
@@ -306,18 +307,17 @@ header.span {
     width: 100%;
   }
 
-  .article {
+  .event {
     flex-direction: column;
-    /*align-items: center;*/
   }
 
-  .article img {
-    width: 90%;   /*100%?*/
+  .event img {
+    width: 90%;
   }
 
-  .articleText {
-    width: 100%;
-    margin: 0 0 64px 16px;  /* not right */
+  .rightText {
+    width: 90%;
+    margin: 0 0 64px 16px;
   }
 
   .deskImg {
@@ -330,7 +330,7 @@ header.span {
     margin: 0 auto;
   }
 
-  .articleText a:hover {
+  .rightText a:hover {
     font-weight: bold;
   }
 }
@@ -338,7 +338,7 @@ header.span {
 
 /* Courses Section */
 .courses {
-  padding: 72px 32px;
+  padding: 32px 72px;
   background-color: #8AC4D0;
 }
 
@@ -363,6 +363,7 @@ article h2 {
   display: flex;
   flex-flow: column wrap;
   background-color: #FFFFFF;
+  margin-top: -3px;
 }
 
 .courseText h3 {
@@ -394,7 +395,7 @@ article h2 {
 
 /* Mobile Courses */
 @media only screen and (max-width: 480px) {
-  .courses h2, #courseBox {
+  #courseBox {
     display: none;
   }
 
@@ -415,14 +416,14 @@ article h2 {
   .mobileCourses a, .mobileCourses a:visited, .mobileCourses a:hover {
     text-decoration: none;
     color: #28527A;
+    font-weight: 600;
   }
 
    .mobileCourses h3:hover {
-     transition: all 500ms ease-in 10ms;
-     text-shadow: 1px 1px 1px #28527A;
+     transition: all 500ms ease-in 5ms;
      background-color: #F4D160;
      border-radius: 5px;
-     border: 1px double #;
+     border: 1px double #28527A;
      box-shadow: -1px 1px 2px #28527A;
    }
 }
