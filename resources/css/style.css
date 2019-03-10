@@ -25,7 +25,7 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
-  text-shadow: 1px 1px 2px #28527A;
+  text-shadow: .5px .5px 1px #28527A;
 }
 
 h3 {
@@ -419,7 +419,7 @@ article h2 {
 
    .mobileCourses h3:hover {
      transition: all 500ms ease-in 10ms;
-     text-shadow: 2px 2px 3px #28527A;
+     text-shadow: 1px 1px 1px #28527A;
      background-color: #F4D160;
      border-radius: 5px;
      border: 1px double #;
