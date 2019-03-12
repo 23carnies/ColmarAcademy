@@ -118,8 +118,8 @@ header.span {
   header .container {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: baseline;
+    justify-content: space-around;
   }
 
   .mobileHeader {
@@ -506,5 +506,36 @@ footer li {
   footer p {
     width: 100%;
     padding: 16px 0 16px 16px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 479px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 959px){
+  .container {
+    width: 100%;
+  }
+
+  #courseBox {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .button {
+    margin-bottom: 16px;
+  }
+
+  #design {
+    padding-bottom: 14px;
   }
 }
